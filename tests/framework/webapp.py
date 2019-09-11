@@ -1,6 +1,6 @@
 from selenium import webdriver
 from data.config import settings
-from urllib.parse import urljoin
+#from urllib.parse import urljoin
 
 
 class WebApp:
@@ -21,7 +21,7 @@ class WebApp:
             self.driver = webdriver.Firefox()
 
     def load_website(self):
-        self.driver.get(settings['url']
+        self.driver.get(settings['url'])
         self.driver.get(settings['scroll1'])
 
 
